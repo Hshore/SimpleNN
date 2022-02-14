@@ -20,7 +20,7 @@ Program.cs
 15  //var net = new NeuralNet(new int[] { testData.inputs[0].Length, 20, 20, 20, testData.targets[0].Length });
 ```
 
-The learning rate is currently hardcoded here
+The learning rate is currently hardcoded to 0.1f here:
 ```
 Layer.cs
 37 public void UpdateWeights()
