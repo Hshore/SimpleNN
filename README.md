@@ -12,7 +12,7 @@ Program.cs
 ```
 
 Network Topology can be changed with this line. The input and output layers are automaticaly set depending on test data selected.
-This example is a 3 layerd network with 10 hidden nodes on 1 hidden layer.
+This example is a 3 layered network with 10 hidden nodes on 1 hidden layer.
 The commented line would be a network with 5 layers, 3 hidden layers with 20 nodes on each.
 ```
 Program.cs
