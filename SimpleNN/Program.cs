@@ -10,7 +10,7 @@ namespace SimpleNN
         static void Main(string[] args)
         {
             
-            var testData = new TestData("alpha");
+            var testData = new TestData("xor");
             var net = new NeuralNet(new int[] { testData.inputs[0].Length, 10, testData.targets[0].Length });
             //var net = new NeuralNet(new int[] { testData.inputs[0].Length, 20, 20, 20, testData.targets[0].Length });
 
@@ -43,13 +43,16 @@ namespace SimpleNN
                     }
                     Console.Write("  Label: " + label + "\n");
                     //Console.Write("\n");
-
-                    Console.Write("Outputs: ");
-                    foreach (var item in res)
+                    if (testData.name != "alpha")
                     {
-                        Console.Write("," + item);
+
+                        Console.Write("Outputs: ");
+                        foreach (var item in res)
+                        {
+                            Console.Write("," + item);
+                        }
+                        Console.Write("\n");
                     }
-                    Console.Write("\n");
 
                     Console.Write("Targets: ");
                     foreach (var item in targs)

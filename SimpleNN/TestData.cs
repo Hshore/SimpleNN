@@ -6,7 +6,7 @@ namespace SimpleNN
 {
     class TestData
     {
-
+        public string name;
         public float[][] inputs;
         public float[][] targets;
         public string[] targetLables;
@@ -14,7 +14,8 @@ namespace SimpleNN
 
         public TestData(string _name)
         {
-            switch (_name)
+            name = _name;
+            switch (name)
             {
                 case "xor":
                     inputs = new float[4][];
