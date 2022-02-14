@@ -2,7 +2,7 @@ A very simple Neural Network console app written from scatch in c#.
 
 Supervised learning, Gradient decent and Sigmoid activations.
 
-This project is a testing enviroment to learn more about Machine Learning. It is very simple and has inbuilt data sets for solving of some simple problems:
+This project is a testing enviroment to learn more about Machine Learning. It is very simple and has inbuilt data sets for solving some simple problems:
 
 Inbuilt test data sets in Testdata.cs: "alpha", "xor", "xnor"
 Selected dataset can be changed here:
