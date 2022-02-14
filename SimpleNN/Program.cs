@@ -9,9 +9,10 @@ namespace SimpleNN
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
+            
             var testData = new TestData("alpha");
             var net = new NeuralNet(new int[] { testData.inputs[0].Length, 10, testData.targets[0].Length });
+            //var net = new NeuralNet(new int[] { testData.inputs[0].Length, 20, 20, 20, testData.targets[0].Length });
 
             Stopwatch watch = new Stopwatch();
             for (int i = 0; i < 10000000000; i++)
